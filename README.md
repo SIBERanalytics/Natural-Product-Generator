@@ -18,7 +18,7 @@ Train LSTM model with augmented SMILES and sampling 100M SMILES from the model
 
 For more advanced options (not used in this study), please visit https://github.com/skinnider/NPS-generation.git
 
-Figshare Link to data for training of LSTM model will be provided upon publication. 
+Figshare Link to data for training of LSTM model will be provided upon publication of manuscript. 
 
 ### Environment
 
