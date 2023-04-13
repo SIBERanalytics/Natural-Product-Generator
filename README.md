@@ -1,8 +1,8 @@
 ### Generation of Natural Product-like molecules 
 
-This repository (imported from https://github.com/skinnider/NPS-generation.git; Citation: Skinnider, M.A., Wang, F., Pasin, D. et al. A deep generative model enables automated structure elucidation of novel psychoactive substances. Nat Mach Intell 3, 973–984 (2021). https://doi.org/10.1038/s42256-021-00407-x) was used to generate natural product-like molecules by learning the molecular language 400,000 known natural product molecules found in the COCONUT(https://coconut.naturalproducts.net) database. 
+This repository (imported from https://github.com/skinnider/NPS-generation.git; Citation: Skinnider, M.A., Wang, F., Pasin, D. et al. A deep generative model enables automated structure elucidation of novel psychoactive substances. Nat Mach Intell 3, 973–984 (2021). https://doi.org/10.1038/s42256-021-00407-x) was used to generate natural product-like molecules by learning the molecular language circa 400,000 known natural product molecules found in the COCONUT(https://coconut.naturalproducts.net) database. 
 
-The results of the experiment and the description of the data generated is presented in the manuscript titled "67 million natural product-like compound database generated via molecular language processing"(DOI: TBC)
+The results of the experiment and the description of the data generated are presented in the manuscript titled "67 million natural product-like compound database generated via molecular language processing"(DOI: TBC)
 
 ### Usage
 
