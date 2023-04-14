@@ -1,6 +1,6 @@
 ### Generation of Natural Product-like molecules 
 
-This repository (imported from https://github.com/skinnider/NPS-generation.git; Citation: Skinnider, M.A., Wang, F., Pasin, D. et al. A deep generative model enables automated structure elucidation of novel psychoactive substances. Nat Mach Intell 3, 973–984 (2021). https://doi.org/10.1038/s42256-021-00407-x) was used to generate natural product-like molecules by learning the molecular language of ~400,000 known natural product molecules found in the COCONUT(https://coconut.naturalproducts.net) database. 
+This repository (imported from https://github.com/skinnider/NPS-generation.git; Citation: Skinnider, M.A., Wang, F., Pasin, D. et al. A deep generative model enables automated structure elucidation of novel psychoactive substances. Nat Mach Intell 3, 973–984 (2021). https://doi.org/10.1038/s42256-021-00407-x) was used to generate natural product(NP)-like molecules by learning the molecular language of ~400,000 known natural product molecules found in the COCONUT(https://coconut.naturalproducts.net) database. 
 
 The results of the experiment and the description of the data generated are presented in the manuscript titled "67 million natural product-like compound database generated via molecular language processing" (DOI: TBC)
 
@@ -16,9 +16,9 @@ The results of the experiment and the description of the data generated are pres
 
 `python NPG/python/train_model.py --smiles_file='/path/to/augmentedsmiles/coconut_augsmiles.smi' --output_dir='/path/to/model' --rnn_type='LSTM' --sample_size=100000000  --patience=10000 > train_model.out`
 
-#### Sampling 1000 more NP-like SMILES with the trained model 
+#### Sampling more NP-like SMILES with the trained model 
 
-Note: Output will be written as `sampled-SMILES-$(sample_idx).smi`
+Note: Output will be written as `sampled-SMILES-$(sample_idx).smi`. We are sampling 1000 more SMILES in the following example.
 
 `python NPG/python/sample_molecules.py --model_file='/path/to/augmentedsmiles/coconut_rnn_model.pt --smiles_file='/path/to/augmentedsmiles/coconut_augsmiles.smi' --mols_per_file=1000 --output_dir=/path/to/output_smiles --sample_idx=1 > sample_molecules.out`
 
