@@ -16,7 +16,10 @@ The results of the experiment and the description of the data generated are pres
 
 `python NPG/python/train_model.py --smiles_file='/path/to/augmentedsmiles/coconut_augsmiles.smi' --output_dir='/path/to/model' --rnn_type='LSTM' --sample_size=100000000  --patience=10000 > train_model.out`
 
-#### Sampling 1000 more NP-like SMILES with the trained model (output will be written as `sampled-SMILES-$(sample_idx).smi`)
+#### Sampling 1000 more NP-like SMILES with the trained model 
+
+Note: Output will be written as `sampled-SMILES-$(sample_idx).smi`
+
 `python NPG/python/sample_molecules.py --model_file='/path/to/augmentedsmiles/coconut_rnn_model.pt --smiles_file='/path/to/augmentedsmiles/coconut_augsmiles.smi' --mols_per_file=1000 --output_dir=/path/to/output_smiles --sample_idx=1 > sample_molecules.out`
 
 For more advanced options (not used in this study), please visit https://github.com/skinnider/NPS-generation.git
