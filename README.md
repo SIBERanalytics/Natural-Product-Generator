@@ -8,13 +8,16 @@ The results of the experiment and the description of the data generated are pres
 
 NPG is the root directory of GitHub Repository "https://github.com/SIBERanalytics/Natural-Product-Generator"
 
-Augmenting COCONUT SMILES by a factor of 10 to improve validity of generated SMILES
+#### Augmenting COCONUT SMILES by a factor of 10 to improve validity of generated SMILES
 
 `python NPG/python/augment-SMILES.py --input_file='/path/to/smiles/coconut_smiles_nostereo_sample80.smi' --output_file='/path/to/augmentedsmiles/coconut_augsmiles.smi' --enum_factor=10  > augment-SMILES.out`
 
-Train LSTM model with augmented SMILES and sampling 100M SMILES from the model
+#### Train LSTM model with augmented SMILES and sampling 100M SMILES from the model
 
 `python NPG/python/train_model.py --smiles_file='/path/to/augmentedsmiles/coconut_augsmiles.smi' --output_dir='/path/to/models' --rnn_type='LSTM' --sample_size=100000000  --patience=10000 > train_model.out`
+
+#### Sampling more NP-like molecules with the trained model
+`python NPG/python/sample_molecules.py --model_file='/path/to/augmentedsmiles/coconut_augsmiles.smi'`
 
 For more advanced options (not used in this study), please visit https://github.com/skinnider/NPS-generation.git
 
